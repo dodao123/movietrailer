@@ -1,0 +1,37 @@
+/* Cấu hình cơ bản */
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Đảm bảo các phần tử con không bị đè lên nhau */
+.bg-black {
+  background-color: black;
+}
+
+/* Cấu hình cho Banner */
+.banner-container {
+  /* Tùy chỉnh kích thước và căn chỉnh của Banner */
+  margin-bottom: 40px;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .grid-cols-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px; /* Khoảng cách giữa các phần tử */
+  }
+  
+  .banner-container {
+    margin-bottom: 10px; /* Điều chỉnh khoảng cách dưới banner */
+  }
+  
+  .movie-list-container {
+    padding: 0 10px; /* Thêm padding cho các phần tử danh sách phim */
+  }
+}
